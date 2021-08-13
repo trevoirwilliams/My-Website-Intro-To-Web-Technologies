@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">        
+        
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div id="nav">
+                <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
+            </div>
+            <div id="content">
+                <h1 class="display-1">This is the Title h1</h1>
+        
+                <h1>Hello World.</h1>
+                <h2 >Hello World.</h2>
+                <h3 >Hello World.</h3>
+                <h4 >Hello World.</h4>
+                <h5 >Hello World.</h5>
+                <h6 >Hello World.</h6>
+                <p>
+                    This is my frist web page. 
+                    <br/>
+                    This is what I want in the new line.
+                </p>
+                <p class="information">
+                    This is the other p tag 1
+                </p>
+                <p>
+                    This is the other p tag 2
+                </p>
+                <p class="information">
+                    This is the other p tag 3
+                </p>
+                <p id="targetTag">
+                    This is the other p tag 4
+                </p>
+                <p class="information">
+                    This is the other p tag 5
+                </p>
+
+                <a id="link1" class="btn btn-secondary" href="https://www.amazon.com" target="_blank">Amazon</a>
+
+                <button type="button" class="btn btn-link" onclick="buttonClicked()">Click Me</button>
+                <button type="button" class="btn btn-danger" onclick="buttonToChangeTextClicked()">Click Me To Change Text</button>
+                <button type="button" class="btn btn-success" id="hideTitleBtn">Click Me To Hide Title</button>
+            </div>
+            <div id="footer">
+                This is the footer 
+            </div>
+        </div>
+        
+
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+
+        <script>
+            $(function(){
+                $('#hideTitleBtn').click(function(){
+                    $('#title').toggle();
+                    $('p').text('THIS IS jQUERY TEXT');
+                    $('.information').text('THIS IS INFORMATION');
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(255, 61, 61); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title {
+    text-decoration:underline ; 
+    background-color: brown;
+}
+
+.subTitle{
+    text-decoration:dotted ; 
+    background-color: black;
+    color: white;
+}
+
+#staffTable {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#staffTable td, #staffTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#staffTable th {
+    background-color: rgb(255, 61, 61); 
+    color: #fff;
+}
+
+.information{
+    color: purple;
+    font-style: italic;
+}
+
+.dp{
+    width: 300px;
+    height: 200px;
+}
