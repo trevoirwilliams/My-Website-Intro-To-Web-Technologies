@@ -6,54 +6,112 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">        
         
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="img/favicon.png"/>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      External Sites
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="https://www.amazon.com">Amazon</a></li>
+                      <li><a class="dropdown-item" href="#">eBay</a></li>
+                      <li><a class="dropdown-item" href="#">Ali Express</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br/>
         <div id="container" class="container">
-            <div id="nav">
-                <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
-            </div>
-            <div id="content">
-                <h1 class="display-1">This is the Title h1</h1>
-        
-                <h1>Hello World. My Website is now live!!!!!</h1>
-                <h2 >Hello World.</h2>
-                <h3 >Hello World.</h3>
-                <h4 >Hello World.</h4>
-                <h5 >Hello World.</h5>
-                <h6 >Hello World.</h6>
-                <p>
-                    This is my frist web page. 
-                    <br/>
-                    This is what I want in the new line.
-                </p>
-                <p class="information">
-                    This is the other p tag 1
-                </p>
-                <p>
-                    This is the other p tag 2
-                </p>
-                <p class="information">
-                    This is the other p tag 3
-                </p>
-                <p id="targetTag">
-                    This is the other p tag 4
-                </p>
-                <p class="information">
-                    This is the other p tag 5
-                </p>
-
-                <a id="link1" class="btn btn-secondary" href="https://www.amazon.com" target="_blank">Amazon</a>
-
-                <button type="button" class="btn btn-link" onclick="buttonClicked()">Click Me</button>
-                <button type="button" class="btn btn-danger" onclick="buttonToChangeTextClicked()">Click Me To Change Text</button>
-                <button type="button" class="btn btn-success" id="hideTitleBtn">Click Me To Hide Title</button>
-            </div>
-            <div id="footer">
-                This is the footer 
-            </div>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/sunflower.jpg" class="d-block w-100 slideImg" alt="sunflower">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/beach.jpg" class="d-block w-100 slideImg" alt="beach">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/bird.jpg" class="d-block w-100 slideImg" alt="bird">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/plover.jpg" class="d-block w-100 slideImg" alt="plover">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Fourth slide label</h5>
+                      <p>Some representative placeholder content for the fourth slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <br/>
+              <div class="row">
+                <div class="col">
+                    <h2>Learn More</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col">
+                  <h2>Do More</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores, quod voluptatum fugiat rem consequatur molestiae, quas iste magni tenetur laborum repellat inventore qui assumenda aliquam facere nemo soluta ex.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col">
+                    <h2>Travel More</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores, quod voluptatum fugiat rem consequatur molestiae, quas iste magni tenetur laborum repellat inventore qui assumenda aliquam facere nemo soluta ex.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>  
+                </div>
+              </div>
+              <hr>
         </div>
-        
 
+        <footer class="container">
+            <p>&copy; My Website 2021</p>
+        </footer>
         
 
         <!-- JavaScript Bundle with Popper -->

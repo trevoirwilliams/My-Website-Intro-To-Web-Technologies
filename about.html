@@ -8,62 +8,163 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <div id="container" class="container">
-            <div id="nav">
-                <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
-            </div>
-            <div id="content">
-                
-                <h1 id="title">About Us Page</h1>
-                
-                <img src="img/sunflower.jpg" class="dp"/>
-                <img src="img/sunflower.jpg" class="dp"/>
-                <img src="img/sunflower.jpg" class="dp"/>
-                <img src="img/sunflower.jpg" class="dp"/>
-                <img src="img/sunflower.jpg" class="dp"/>
-                <img src="img/sunflower.jpg" class="dp"/>
-            
-                <ul>
-                    <li>
-                        <p class="information">List Item 1</p>
-                    </li>
-                    <li>
-                        <h5>List Item 2</h5>
-                    </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      External Sites
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="https://www.amazon.com">Amazon</a></li>
+                      <li><a class="dropdown-item" href="#">eBay</a></li>
+                      <li><a class="dropdown-item" href="#">Ali Express</a></li>
+                    </ul>
+                  </li>
                 </ul>
-                <ol>
-                    <li>
-                        <p>List Item 1</p>
-                    </li>
-                    <li>
-                        <h5>List Item 2</h5>
-                    </li>
-                </ol>
-            
-                <h3>Staff Member Details</h3>
-                <table id="staffTable">
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Staff Id</th>
-                    </tr>
-                    <tr>
-                        <td>Lewis Felton</td>
-                        <td>29</td>
-                        <td>77-98</td>
-                    </tr>
-                    <tr>
-                        <td>Hanna Hamilton</td>
-                        <td>32</td>
-                        <td>22-34</td>
-                    </tr>
-                </table>
-
-               </div>
-            <div id="footer">
-                This is the footer 
+              </div>
             </div>
+          </nav>
+          <br/>
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="text-primary">About Me</h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere minus repellat sit dolor sapiente asperiores itaque, ut vitae earum iure inventore animi adipisci tempora omnis? Voluptatibus voluptatum sed expedita? 
+                    </p>
+                </div>
+                <div class="col-3 offset-md-1">
+                    <h4 class="text-primary">Contact Info</h4>
+                    <ul>
+                        <li><a href="#" class="text-dark">Twitter</a></li>
+                        <li><a href="#" class="text-dark">Facebook</a></li>
+                        <li><a href="#" class="text-dark">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <br/>
+            <div id="portfolio" class="text-center">
+                <h1 class="text-primary">My Portfolio</h1>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui impedit quas laudantium fugiat incidunt quae quos, in quidem exercitationem omnis atque esse obcaecati similique pariatur quibusdam fugit sed numquam eveniet?</p>
+                <p>
+                    <a href="mailto:test@example.com" class="btn btn-primary my-2">Hire Me!</a>
+                    <a href="contact.html" class="btn btn-secondary my-2">Leave Feedback</a>
+                </p>
+            </div>
+            <div id="gallery">
+                <div class="row" >
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Shopping Cart</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Jewellry Store</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Attendance System</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Attendance System</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+                <br/>
+                <div class="row" >
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Shopping Cart</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Jewellry Store</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Attendance System</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/developer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Attendance System</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+         
+
+            <hr/>
         </div>
+        <footer class="container">
+            <p>&copy; My Website 2021</p>
+        </footer>
+        
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
        

@@ -8,36 +8,86 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">My Website</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      External Sites
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="https://www.amazon.com">Amazon</a></li>
+                      <li><a class="dropdown-item" href="#">eBay</a></li>
+                      <li><a class="dropdown-item" href="#">Ali Express</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br/>
         <div id="container" class="container">
-            <div id="nav">
-                <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="text-primary">About Me</h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere minus repellat sit dolor sapiente asperiores itaque, ut vitae earum iure inventore animi adipisci tempora omnis? Voluptatibus voluptatum sed expedita? 
+                    </p>
+                </div>
+                <div class="col-3 offset-md-1">
+                    <h4 class="text-primary">Contact Info</h4>
+                    <ul>
+                        <li><a href="#" class="text-dark">Twitter</a></li>
+                        <li><a href="#" class="text-dark">Facebook</a></li>
+                        <li><a href="#" class="text-dark">GitHub</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="content">
+            <br/>
+            <hr/>
+            <br/>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputFirstName4" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="inputFirstName4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputLastName4" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="inputLastName4">
+                </div>
+                <div class="col-12">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                  <label for="inputQuery" class="form-label">Your Query</label>
+                  <textarea class="form-control" id="inputQuery"></textarea>
+                </div>
                 
-                <h1 id="title">Contact Us</h1>
-                <form action="success.html">
-                    <label for="fname">Full Name</label> <br/>
-                    <input type="text"  class="form-control" id="fname" name="fname"/>
-                    <br/><br/>
-                    <label for="email">Email Address</label><br/>
-                    <input type="email"  class="form-control" id="emailadress" name="emailadress"/>
-                    <br/><br/>
-                    <label for="query">Query</label><br/>
-                    <textarea id="query"  class="form-control" name="query"></textarea>
-                    <br/>
-                    <br/>
-                    <div class="d-grid gap-2">
-                        <input type="submit"  class="btn btn-success btn-block" value="Submit Your Query" onclick="buttonClicked()" />
-                    </div>
-                    
-                </form>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-block">Submit Query</button>
+                </div>
+              </form>
 
-               </div>
-            <div id="footer">
-                This is the footer 
-            </div>
+              <hr/>
         </div>
-
+        <footer class="container">
+            <p>&copy; My Website 2021</p>
+        </footer>
       
         
         <!-- JavaScript Bundle with Popper -->
