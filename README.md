@@ -11,4 +11,5 @@ Learn how to build a website using HTML and CSS and Visual Studio Code. By the e
 - How to upload code to GitHub.
 - How to publish your static website to the internet using Netlify. 
 - How to design a form to collect data.
-
+- How to use Bootstrap 5
+- How To Use Javascript
